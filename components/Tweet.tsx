@@ -58,9 +58,9 @@ function Tweet({tweet} : Props) {
 
         {/*Comment box logic*/}
         {comments?.length >0 && (
-            <div className='my-2 mt-5 max-h-44 space-y-5 overflow-y-scroll border-t border-gray-100 p-5'>
+            <div className=' my-2 mt-5 max-h-68 space-y-5 overflow-y-scroll border-t border-gray-100 p-5'>
                 {comments.map(comment=>(
-                    <div className='relative flex space-x-2' key={comment._id}>
+                    <div className='hover:bg-gray-100 transition-all duration-200 relative flex space-x-2' key={comment._id}>
                         <hr className='absolute left-5 top-10 h-8 border-x border-gray-300'/>
                         <img className='mt-2 w-7 h-7 object-cover rounded-full' alt='' src={comment.profileImg}/>
                         <div >
