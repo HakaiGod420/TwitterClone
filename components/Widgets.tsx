@@ -14,7 +14,7 @@ function Widgets() {
         
         <TwitterTimelineEmbed
         sourceType="profile"
-        screenName="Steam"
+        screenName="anime"
         options={{height: 1000}}
         />
 
