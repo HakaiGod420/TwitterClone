@@ -24,7 +24,7 @@ function Feed({tweets:tweetsProp} : Props) {
   }
   //console.log(tweets)
   return (
-    <div className='col-span-8 lg:col-span-5 border-x'>
+    <div className='col-span-8 lg:col-span-5 max-h-screen overflow-scroll scrollbar-hide border-x'>
         <div className='flex items-center justify-between'>
             <h1 className='p-5 pb-0 text-x font-bold'>Home</h1>
             <RefreshIcon onClick={handleRefresh} className='mr-5 mt-5 h-8 w-8 cursor-pointer text-twitter
@@ -33,7 +33,7 @@ function Feed({tweets:tweetsProp} : Props) {
 
         {/*TweetBox*/}
         <div>
-          <TweetBox />
+          <TweetBox setTweets={setTweets  } />
         </div>
 
         {/* tweets*/}
